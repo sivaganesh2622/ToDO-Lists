@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>ToDO LIST</h1>
+    <input id="inputbox" type="text" placeholder="enter your task">
+    <button id="addbtn">Add</button>
+    <ul id="lists">
+        <li>orange <button onclick="delfunction(event)" id="delbtn">Delete</button></li>
+    </ul>
+     </div>
+    <script>
+
+
+        let addbtn = document.getElementById("addbtn")
+        let delbtn = document.getElementById("delbtn")
+        let lists = document.getElementById("lists")
+
+
+
+        addbtn.addEventListener("click",()=>{
+            let inputbox = document.getElementById("inputbox")
+
+                let newli = document.createElement("li")
+                newli.innerHTML = inputbox.value + ` <button id="delbtn" onclick="delfunction(event)">Delete</button></li> `
+                lists.append(newli)
+
+        })
+
+        const delfunction= (event)=>{
+            event.target.parentElement.remove()
+        }
+
+        
+    </script>
+</body>
+</html>

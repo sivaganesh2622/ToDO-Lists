@@ -1,0 +1,94 @@
+/* Basic Reset */
+body, h1, input, button, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Box Styling */
+input[type="text"] {
+    width: calc(100% - 80px); /* Adjust width to fit with button */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Add Button Styling */
+button#addbtn {
+    width: 70px;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button#addbtn:hover {
+    background-color: #4cae4c;
+}
+
+/* List Styling */
+ul#lists {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* List Item Styling */
+ul#lists li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete Button Styling */
+ul#lists li button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+ul#lists li button:hover {
+    background-color: #c9302c;
+}
